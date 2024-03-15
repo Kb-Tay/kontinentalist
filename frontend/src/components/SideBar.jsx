@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Heading, Button, VStack, Text, WrapItem, Wrap } from '@chakra-ui/react'
+import { Box, Heading, Button, VStack } from '@chakra-ui/react'
 
 function SideBar({subtitle, searchTitle}) {
   return (
@@ -7,10 +7,11 @@ function SideBar({subtitle, searchTitle}) {
         position="fixed"
         top="64px"
         left="0px"
-        width="16%"
-        maxW="16%"
+        width="20%"
+        maxW="20%"
         height="100vh"
         backgroundColor="gray.100"
+        overflowY="auto"
       >
         <Heading pt='10px' as='h3' size='md'>
           Topics you might be interested
@@ -23,6 +24,7 @@ function SideBar({subtitle, searchTitle}) {
             <Button onClick={() => searchTitle(data[1])}
               style={{
                 width: "100%",
+                height: "60px",
                 whiteSpace: "normal",
                 wordWrap: "break-word",
               }}
