@@ -1,6 +1,10 @@
 import React from 'react'
 import { Box, Heading, Button, VStack } from '@chakra-ui/react'
 
+/*
+Sidebar that displays topic summaries.
+@params {function} searchTitle - updates the ref of component which should be scrolled into view
+*/
 function SideBar({subtitle, searchTitle}) {
   return (
     <Box
@@ -20,8 +24,8 @@ function SideBar({subtitle, searchTitle}) {
           {
           subtitle === undefined 
           ? <>No Title</> 
-          : subtitle.filter(data => data[0].length !== 0).map((data) => (
-            <Button onClick={() => searchTitle(data[1])}
+          : subtitle.filter(data => data[0].length !== 0).map((data, ind) => (
+            <Button key={ind} onClick={() => searchTitle(data[1])}
               style={{
                 width: "100%",
                 height: "60px",

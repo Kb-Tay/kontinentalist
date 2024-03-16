@@ -14,7 +14,7 @@ This web application was created using React.js and Javascript. Libraries used i
 - Clone the repository
 - `cd` into the `/frontend` folder
 - Install dependencies separately in the frontend folders with npm install
-- Run the application with `npm run dev` for the frontend and view application on your localhost!
+- Run the application with `npm start` for the frontend and view application on your localhost!
 
 ### Task 2: API Server:
 

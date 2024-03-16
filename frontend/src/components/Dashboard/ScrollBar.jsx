@@ -2,7 +2,10 @@ import React from "react";
 import { Box, Flex, Spacer, Heading, IconButton, Text, HStack } from "@chakra-ui/react";
 import { TriangleUpIcon, ArrowRightIcon, ArrowLeftIcon, CloseIcon } from "@chakra-ui/icons";
 
-function ScrollBar({page, setPage, searchTitle, isEnd}) {
+/*
+NavBar for dashboard that allows for scrolling of pages
+*/
+function ScrollBar({page, setPage, searchTitle, isEnd, isFetching}) {
 
   return (
     <Box bg="gray.400" px={4} py={3} position="sticky" top="0" zIndex="sticky">
@@ -13,7 +16,7 @@ function ScrollBar({page, setPage, searchTitle, isEnd}) {
           <Text>
             Page: {page}
           </Text>
-          <button>
+          <button disabled={isFetching}>
           { 
             page <= 1 
             ? <CloseIcon color='red.500'/>
@@ -23,7 +26,7 @@ function ScrollBar({page, setPage, searchTitle, isEnd}) {
               />
           }
           </button>
-          <button> 
+          <button disabled={isFetching}> 
           {
             isEnd
             ? <CloseIcon color='red.500'/>
