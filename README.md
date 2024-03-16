@@ -16,6 +16,9 @@ This web application was created using React.js and Javascript. Libraries used i
 - Install dependencies separately in the frontend folders with npm install
 - Run the application with `npm start` for the frontend and view application on your localhost!
 
+### Preview
+![screenshot](https://github.com/Kb-Tay/kontinentalist/blob/main/frontend/public/Kontinentalist.png)
+
 ### Task 2: API Server:
 
 ### Description
