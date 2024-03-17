@@ -31,3 +31,31 @@ This API was created with Node.js and Express.js
 - Run the application with `npm run dev` for server
 - Note that the server will be run on `http://localhost:3000`
 
+#### GET
+1. `GET /post` - Gets all posts
+2. `GET /post/:id` - Gets post with specific id
+
+#### POST 
+1. `POST /posts`- Creates new post
+   - Requires the following request body params
+```
+{
+  title: "title1",
+  content: "content1"
+}
+```
+
+#### PATCH 
+1. `PATCH /posts/:id`- Updates a post with specified id 
+   - Requires the following request body params
+```
+{
+  title: "title1",
+  content: "content1"
+}
+```
+
+#### DELETE
+1. `DELETE /posts/:id` - Deletes a post with specified id
+
+
