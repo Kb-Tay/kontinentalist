@@ -12,8 +12,8 @@ This web application was created using React.js and Javascript. Libraries used i
 
 ### Installation
 - Clone the repository
-- `cd` into the `/frontend` folder
-- Install dependencies separately in the frontend folders with npm install
+- `cd` into the `kotinentalist/frontend` folder
+- Install dependencies separately in the frontend folders with `npm install`
 - Run the application with `npm start` for the frontend and view application on your localhost!
 
 ### Preview
@@ -26,7 +26,8 @@ This API was created with Node.js and Express.js
 
 ### Installation
 - Clone the repository
-- `cd` into the `/server` folder
-- Install dependencies separately in the backend folders with npm install
+- `cd` into the `kontinentalist/server` folder
+- Install dependencies separately in the backend folders with `npm install`
 - Run the application with `npm run dev` for server
+- Note that the server will be run on `http://localhost:3000`
 
